@@ -19,7 +19,11 @@ jobs:
       YT_CLIENT_ID:     ${{ secrets.YT_CLIENT_ID }}
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
-      
+
+      # chon thumb tieude bat dau
+      SEQ_BASE_RUN: "22"
+      TITLE_START: "19"
+      THUMB_START: "19"
 
     steps:
       - name: Checkout wrapper (repo PUBLIC)
