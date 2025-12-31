@@ -166,6 +166,8 @@ jobs:
           # Torch CPU + Torchaudio (đúng index CPU)
           python -m pip install "torch==2.3.1" "torchaudio==2.3.1" --index-url https://download.pytorch.org/whl/cpu
           # Whisper (gói đúng tên: openai-whisper)
+          #loc banner qr
+          python -m pip install opencv-python-headless
           python -m pip install "openai-whisper==20231117"
           # Kiểm tra import (dùng python -c để tránh lỗi YAML here-doc)
           python -c "import sys; import whisper, torch, torchaudio; print('Whisper/Torch OK:', whisper.__version__, torch.__version__)"
