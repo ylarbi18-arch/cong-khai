@@ -27,6 +27,13 @@ jobs:
       TITLE_START: "19"
       THUMB_START: "19"
 
+      # công tắt chọn poll hoặc cloudflare
+      IMG_PROVIDER: cloudflare
+      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+      CF_API_TOKEN:  ${{ secrets.CF_API_TOKEN }}
+      CF_MODEL: "@cf/black-forest-labs/flux-1-schnell"
+      CF_STEPS: "8"
+
     steps:
       - name: Checkout wrapper (repo PUBLIC)
         uses: actions/checkout@v4
