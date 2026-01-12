@@ -1,8 +1,7 @@
 name: run-private-code
 
 on:
-  schedule:
-    - cron: "0 9 * * *"  # chạy 4h sáng 
+  
     
     
     
